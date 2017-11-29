@@ -1,0 +1,132 @@
+<!DOCTYPE HTML><!--Definimos el documento HTML5-->
+<html lang="es" dir="ltr"><!--Idioma español y disposición de contenido para lectura de izquierda a derecha -->
+  <head><!--Se usa para construir la cabecera del documento. Es invisible para el usuario. Etiqueta de apertura -->
+    <title>Contacto</title><!--Nombre del documento. Se utiliza a efectos funcionales para el desarrollador -->
+    <!--Etiquetas meta requeridas para Bootstrap-->
+    <meta charset="utf-8"><!--Codificación de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- -->
+    <!--Etiquetas meta de HTML5-->
+    <meta name="description" content="Formulario de contacto de Picatoste Films"><!--Contenido del documento-->
+    <!--Vinculamos la página al CSS de Bootstrap. Necesario para que funcione Bootstrap-->
+    <link rel="stylesheet" href="D:\3_Lenguaje de Marcas\Proyecto\Bootstrap 4 Beta\css\bootstraphector.css" style type="text/css">
+  </head><!--Cabecera del documento: Etiqueta de cierre-->
+  
+  <body><!--Etiqueta de apertura del cuerpo de la página -->
+    <!--Del mismo modo que <head>, la intención de <header> es
+      proveer información introductoria (títulos, subtítulos, logos), pero difiere con respecto a <head> en su alcance. Mientras que
+      el elemento <head> tiene el propósito de proveer información acerca de todo el documento, <header> es usado solo para el
+      cuerpo o secciones específicas dentro del cuerpo-->
+    <header>
+      <div class="col-1-sm text-center">
+          <h1>Contáctanos</h1>
+      </div>
+	 </header>
+    <nav><!--Barra de navegación: Etiqueta de apertura-->
+    	
+    </nav><!--Barra de navegación: Etiqueta de cierre-->
+    <section><!--Contiene la información principal de la página: Etiqueta de apertura-->
+    	
+    	
+    	<!--En el CSS #nombre {} si es id; .nombre si es una clase-->
+    	<form id="formcontacto" action="Pedidorecibido.html" enctype="multipart/form-data" method="post"><!--Modificado en #formcontacto-->
+    		<div class="container">
+
+				<div class="form-group row">
+					<label for="nombre" class="col-sm-2 col-form-label">Nombre: </label>
+   					<div class="col-sm-3">
+      				<input type="text" class="form-control" id="nombre" placeholder="John" required>
+    				</div>
+          			<label for="nombre" class="col-sm-2 col-form-label">Apellidos: </label>
+            		<div class="col-sm-3">
+              		<input type="text" class="form-control" id="nombre" placeholder="Doe" required>
+            		</div>
+  				</div>
+  				
+    			<div class="form-group row">
+	    			<label for="inputEmail3" class="col-sm-2 col-form-label">Email: </label>
+	    			<div class="col-sm-3">
+	      			<input type="email" class="form-control" id="inputEmail3" placeholder="johndoe@gmail.com" required>
+    				</div>
+  				</div>
+
+  				<div class="form-group row">
+	   				<label for="introduzcaContraseña" class="col-sm-2 col-form-label">Contraseña: </label>
+	   				<div class="col-sm-3">
+	      			<input type="password" class="form-control" id="introduzcaContraseña" placeholder="abcd1234" required>
+	      			<small id="passwordHelpBlock" class="form-text text-muted">
+  					Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.<!--¿Cómo se hace esto?-->
+					</small>
+    				</div>
+  				</div>
+
+  				<div class="form-group row">
+  					<label for="sexo" class="col-sm-2 col-form-label">Sexo: </label><!--ARREGLAR ESTO PARA QUE SE VEA SIEMPRE EN HORIZONTAL Y NO SE MONTE EL TEXTO CON EL BOTÓN-->
+	  				<div class="form-check form-check-inline col-sm-1">
+	  					<label class="form-check-label col-form-label">
+	    				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Mujer
+	 					</label>
+					</div>
+					<div class="form-check form-check-inline col-sm-1">
+	  					<label class="form-check-label col-form-label">
+	    				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Hombre
+	  					</label>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="selecciónServicio" class="col-sm-2 col-form-label">Servicio: </label>
+					<div class="form-group col-sm-3 col-form-label">
+	      				<select id="selecciónServicio" class="form-control col-form-label" required>
+	        			<option selected>Vídeo: Grabación</option>
+	       				<option>Vídeo: Edición</option>
+	       				<option>Vídeo: Montaje</option>
+	       				<option>Fotografía: Eventos</option>
+	       				<option>Fotografía: Book</option>
+	       				<option>Alquiler de equipo</option>
+	     				</select>
+    			 	</div>
+    		  	</div>
+
+  			 	<div class="form-group">
+    			<input type="file" class="form-control-file" id="subirArchivo" accept="image/*,video/*">
+  			 	</div>
+
+  			 	<div class="form-group">
+    				<label for="descripciónServicio">Descripción del servicio</label>
+    				<textarea class="form-control col-sm-5" id="descripciónServicio"></textarea>
+  			 	</div>
+
+  			 	<div class="form-check">
+  					<label class="form-check-label">
+    				<input class="form-check-input" type="checkbox" value="" required>
+    				He leído y acepto los términos y condiciones del <a href="avisolegal.html">aviso legal</a>
+  					</label>
+				</div>
+
+				<input class="btn btn-primary" type="submit" form="formcontacto" value="Enviar">
+				<input class="btn btn-primary" type="reset" value="Reiniciar">
+
+  			</div>
+		</form>
+
+    <video src="C:\Users\HéctorManuel\Desktop\Proyecto\ .mp4" controls autoplay loop muted preload="auto" poster="demo.jpg" ><!--Quitar y poner en la página de vídeo-->
+    HTML5 Video is required for this example
+    </video>
+
+    </section><!--Etiqueta de cierre de section -->
+    <aside><!--Barra lateral ubicada al lado de section: Etiqueta de apertura-->
+    	
+    </aside><!--Etiqueta de cierre de aside-->
+    <footer><!--Generalmente, el elemento <footer> representará el final del cuerpo de nuestro documento y tendrá un propósito
+			institucional. Sin embargo, <footer> puede ser usado múltiples veces dentro del cuerpo para representar
+			también el final de diferentes secciones (del mismo modo que la etiqueta <header>): Etiqueta de apertura -->
+    	
+    </footer><!--Etiqueta de cierre de footer-->
+    <!--Los elementos JS se colocan inmediatamente antes del cierre del body-->
+    <!--Elementos JS necesarios para el buen funcionamiento de Bootstrap-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body><!--Etiqueta de cierre de body-->
+</html><!--Etiqueta de cierre del documento-->
