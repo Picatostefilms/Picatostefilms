@@ -1,0 +1,99 @@
+<!DOCTYPE HTML><!--Definimos el documento HTML5-->
+<html lang="es" dir="ltr"><!--Idioma español y disposición de contenido para lectura de izquierda a derecha -->
+  <head><!--Se usa para construir la cabecera del documento. Es invisible para el usuario. Etiqueta de apertura -->
+    <title>Contacto</title><!--Nombre del documento. Se utiliza a efectos funcionales para el desarrollador -->
+    <!--Etiquetas meta requeridas para Bootstrap-->
+    <meta charset="utf-8"><!--Codificación de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- -->
+    <!--Etiquetas meta de HTML5-->
+    <meta name="description" content="Galería de vídeos de Picatoste Films"><!--Contenido del documento-->
+    <!--Vinculamos la página al CSS de Bootstrap. Necesario para que funcione Bootstrap-->
+    <link rel="stylesheet" href="css\bootstraphector.css"> 
+    <style type="text/css">
+    </style>
+  </head>
+  <body><!--Etiqueta de apertura del cuerpo de la página -->
+    <header><!--Del mismo modo que <head>, la intención de <header> es
+    proveer información introductoria (títulos, subtítulos, logos), pero difiere con respecto a <head> en su alcance. Mientras que
+    el elemento <head> tiene el propósito de proveer información acerca de todo el documento, <header> es usado solo para el
+    cuerpo o secciones específicas dentro del cuerpo-->
+      <div class="col-1-sm text-center">
+        <h1>Vídeos</h1>
+      </div>
+    </header>
+
+    <nav><!--Barra de navegación: Etiqueta de apertura-->
+      
+    </nav><!--Barra de navegación: Etiqueta de cierre-->
+
+    <section><!--Contiene la información principal de la página: Etiqueta de apertura-->
+
+   <div class="container">
+      <div class="row">
+          <div class="col-12 offset-lg-2 col-lg-8">
+            <video controls poster="Videos\poster.jpg" style="width:100%" >
+              <source src="Videos\dunkirk.mp4" type="video/mp4">
+              <source src="Videos\dunkirk.webm" type="video/webm">
+              <source src="Videos\dunkirk.ogv" type="video/ogv">
+            </video>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-1 col-2">
+          <div class="thumbnail">
+          <a href= "Videos\dunkirk.mp4">
+          <img src="Videos\poster1.jpg" style="width:90%"><!--ESTE ES EL MODELO PARA TODOS LOS VÍDEOS-->
+          </a>
+          </div>
+        </div>
+        <div class="col-2">
+          <img src="Videos\poster1.jpg" style="width:90%">
+        </div>
+        <div class="col-2">
+          <img src="Videos\poster1.jpg" style="width:90%">
+        </div>
+        <div class="col-2">
+          <img src="Videos\poster1.jpg" style="width:90%">
+        </div>
+        <div class="col-2">
+          <img src="Videos\poster1.jpg" style="width:90%">
+        </div>
+      </div>
+<!--AQUÍ EMPIEZAN LOS CONTROLES DE LA GALERÍA DE VÍCTOR-->
+    <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="galeria2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="galeria3.html">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="galeria2.html" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+    </section><!--Etiqueta de cierre de section -->
+    <aside><!--Barra lateral ubicada al lado de section: Etiqueta de apertura-->
+      
+    </aside><!--Etiqueta de cierre de aside-->
+    <footer><!--Generalmente, el elemento <footer> representará el final del cuerpo de nuestro documento y tendrá un propósito
+      institucional. Sin embargo, <footer> puede ser usado múltiples veces dentro del cuerpo para representar
+      también el final de diferentes secciones (del mismo modo que la etiqueta <header>): Etiqueta de apertura -->
+      
+    </footer><!--Etiqueta de cierre de footer-->
+    <!--Los elementos JS se colocan inmediatamente antes del cierre del body-->
+    <!--Elementos JS necesarios para el buen funcionamiento de Bootstrap-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body><!--Etiqueta de cierre de body-->
+</html><!--Etiqueta de cierre del documento-->
